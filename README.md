@@ -73,7 +73,7 @@ display_world(agent = r)
 ```
 
 
-![png](output_7_0.png)
+![png](Simulator/output_7_0.png)
 
 
 <div class=text-justify>
