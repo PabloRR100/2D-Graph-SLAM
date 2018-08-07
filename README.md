@@ -55,7 +55,7 @@ print(r.measurement_noise)
 ```
 
 
-![png](output_5_0.png)
+![png](Simulator/output_5_0.png)
 
 
     0.2
@@ -106,7 +106,7 @@ print_beliefs(r)
 
 
 
-![png](output_9_1.png)
+![png](Simulator/output_9_1.png)
 
 
 Be careful! Increasing the number of landmarks and timesteps will make this matrix bigger, and probably impossible to plot!
@@ -135,7 +135,7 @@ display_world(agent = r, estimates = measurements)
 
 
 
-![png](output_12_1.png)
+![png](Simulator/output_12_1.png)
 
 
 #### What we see here?
@@ -184,23 +184,23 @@ for t in range(timesteps - 1):
 ```
 
 
-![png](output_15_0.png)
+![png](Simulator/output_15_0.png)
 
 
 
-![png](output_15_1.png)
+![png](Simulator/output_15_1.png)
 
 
 
-![png](output_15_2.png)
+![png](Simulator/output_15_2.png)
 
 
 
-![png](output_15_3.png)
+![png](Simulator/output_15_3.png)
 
 
 
-![png](output_15_4.png)
+![png](Simulator/output_15_4.png)
 
 
 
@@ -212,11 +212,10 @@ plot_estimations(mu, re)
 ```
 
 
-![png](output_16_0.png)
+![png](Simulator/output_16_0.png)
 
 
 # Questions
----
 
 - Why so big errors?  
 After so many time steps and 4 landmarks, shouldn't it be more confident about his previous locations?  
@@ -231,13 +230,11 @@ We are all the time using ```[[1,-1],[-1,1]]``` but could that be modified using
 
 
 # Improvements
----
 - More realistic situation where the agent moves and senses and picture the worlds one after the other every iteration
 - Decoupled classes for landmaks and agents
 - Decoupled classes for Omega and Xi wrt the agent, introduced in Brain class and called when agent **```thinks()```**
 
 # To be implemented
----
 - Totally decopled world class from agent class
 - Upgrade to 3D world with a drone instead of a robot
 - Implement an updating omega-xi matrices to update belief state every n time steps out of the total N time steps
