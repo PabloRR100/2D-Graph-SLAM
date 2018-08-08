@@ -10,7 +10,7 @@ import numpy as np
 from objects import agent
 from matplotlib import pyplot as plt
 
-os.chdir('/Users/pabloruizruiz/OneDrive/Proyectos/Udacity CVNP/E3_SLAM')
+os.chdir('/Users/pabloruizruiz/OneDrive/Proyectos/Udacity CVNP/P3_Slam_2')
 from utils import display_world, make_landmarks, plot_estimations
 
 
